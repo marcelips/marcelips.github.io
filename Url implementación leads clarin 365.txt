@@ -1,0 +1,42 @@
+URL IMPLEMENTACIÓN LEADS CLARIN 365
+https://script.google.com/macros/s/AKfycbyFGUU49-VS2PYIboRB4GGQNZamyvhM0jPe6F2UqmsR9Vkg8noeMxjo9ySlTWfR5uMy1A/exec
+
+
+<input type="text" id="dni" name="dni" placeholder="Número de documento" required>
+<input type="tel" id="dni" name="dni" placeholder="Número de documento" required>
+
+
+.imagen-beneficios {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.85);
+    border-radius: 12px;
+}
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+REPLICAR DRIVE DE VACACIONES PARA 2025/2026
+
+MODIFICAR FORMULA HORA OUT PRESENTISMO
+
+
+Hola Marce! cómo estás?
+
+Te dejo un status de lo que venimos haciendo y también para concretar una reu 
+
+?? Recibimos las respuestas de Clarín que nos copiaste; eso ajustó un poco lo que teníamos bajado.
+?? Te mandé el presupuesto de la landing 
+?? Tema creatividades: ok, igual tenés con nosotros en ONE SHOt cuando definamos con que vamos de la propuesta
+?? Tema 8: avanzamos con la estrategia de email dentro de lo posible, contemplando landing + form con Doppler (que es la que vamos a incluir).
+?? Punto 9: en la próxima reunión vemos cómo resolverlo; como no es una plataforma pensada para leads sino para awareness, lo estamos revisando aún con los medios.
+?? Como en el mail de respuestas nos mencionan que sí podríamos correr en TikTok y en X, lo estamos incluyendo en el media plan+los usuarios en caso de activar
+
+?? Me gustaría coordinar para finales de la semana una reunión para ver la propuesta que podríamos intentar. ¿Te parece bien el viernes a la tarde? 
+
+¡Abrazo grande!

@@ -1,0 +1,569 @@
+﻿:root {
+    --clarin-amarillo: #fdd900;
+    --clarin-gris: #333;
+    --clarin-gris-claro: #f8f8f8;
+    --clarin-rojo: #e31f24;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--clarin-gris-claro);
+    color: var(--clarin-gris);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-clarin-80 {
+    display: block;
+    margin: 0;
+    max-width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: left;
+    color: var(--clarin-gris);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Sección del Formulario */
+.formulario {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.llamada-a-la-accion p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.llamada-a-la-accion .subtitulo {
+    color: #888;
+    font-size: 14px;
+}
+
+.icono-llamada {
+    width: 40px;
+    margin: 15px 0;
+}
+
+.formulario form {
+    text-align: left;
+}
+
+.formulario-campos {
+    display: flex;
+    gap: 20px;
+}
+
+.columna-izquierda,
+.columna-derecha {
+    flex: 1;
+}
+
+.campo-formulario {
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario input::placeholder {
+    color: #999;
+}
+
+.formulario .campo-dni {
+    display: flex;
+    gap: 10px;
+}
+
+.formulario .campo-dni select {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.formulario .pregunta-oferta {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.formulario .ofertas-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario .ofertas-radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.formulario .ofertas-radio input[type="radio"] {
+    width: 20px;
+}
+
+.formulario .ofertas-radio .oferta-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.formulario .ofertas-radio .oferta-texto span {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.formulario .obligatorios {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: var(--clarin-amarillo);
+    color: var(--clarin-gris);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #e6c500;
+}
+
+/* Sección de Precios y Ofertas (Nueva) */
+.ofertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.oferta-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo para el logo de Clarín Digital */
+.oferta-imagen-superior {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+/* Nuevo estilo para el logo de 365 */
+.oferta-imagen-365 {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.oferta-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.oferta-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.oferta-subtitulo {
+    display: none;
+}
+
+.oferta-precio {
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 28px;
+    color: var(--clarin-rojo);
+    font-weight: bold;
+    margin: 0;
+}
+
+.precio span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.suscribite-button {
+    background-color: var(--clarin-amarillo);
+    color: var(--clarin-gris);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suscribite-button:hover {
+    background-color: #e6c500;
+}
+
+/* Estilos para el Acordeón */
+.acordeon {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.acordeon-btn {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.acordeon-btn:hover {
+    text-decoration: underline;
+}
+
+.acordeon-flecha {
+    margin-left: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.acordeon-contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+.acordeon-contenido.activo {
+    max-height: 500px;
+    padding: 10px 0;
+}
+
+.acordeon-imagen {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.acordeon-contenido ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+.acordeon-contenido ul li {
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.acordeon-contenido ul li::before {
+    content: "✓";
+    color: #00bfff;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.acordeon-btn.activo .acordeon-flecha {
+    transform: rotate(180deg);
+}
+
+/* Estilos de la sección de beneficios */
+.beneficios-seccion {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.imagen-beneficios {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.clarin-365-text {
+    color: var(--clarin-rojo);
+    font-weight: bold;
+}
+
+/* Estilos para el Footer */
+footer {
+    background-color: var(--clarin-gris);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Estilos para la barra superior */
+.top-bar {
+    background-color: var(--clarin-amarillo);
+    height: 10px;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.top-star {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 30px;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+.oferta-logo-365-img {
+    max-width: 66px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Botón de WhatsApp Flotante */
+.whatsapp-flotante-imagen {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.whatsapp-flotante-imagen img {
+    width: 60px;
+    height: auto;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-flotante-imagen img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos de los Modales (textos flotantes) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001; /* Z-index alto para estar encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% arriba y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text p {
+    font-size: 16px;
+}
+
+/* Estilos para el nuevo mensaje de confirmación */
+.modal-message {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 5s forwards; /* Animación de 5 segundos */
+}
+
+.modal-message-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.close-btn-message {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn-message:hover {
+    color: #ccc;
+}
+
+/* Animación para el mensaje de confirmación */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
+
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagen-beneficios-chica {
+    max-width: 40%;
+    height: auto;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.logo-footer-img {
+    max-width: 70px; /* Puedes ajustar este valor para cambiar el tamaño de la imagen */
+    height: auto;
+}
+
+.footer {
+    background-color: #888; /* Un gris más claro para el fondo del footer */
+    color: #f0f0f0; /* Un blanco para las letras del footer */
+    padding: 20px;
+}
+
+.footer-links a {
+    color: #ffffff; /* Las letras de los enlaces en el footer ahora son blancas */
+    text-decoration: none;
+    margin: 0 10px;
+}

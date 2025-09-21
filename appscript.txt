@@ -1,0 +1,39 @@
+function doPost(e) {
+  // El nombre EXACTO de la pestaña en tu Google Sheet
+  var sheetName = 'Respuestas de formulario 1';
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+  
+  // Si la hoja no existe, la crea con los encabezados en el orden correcto
+  if (!sheet) {
+    sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet(sheetName);
+    sheet.appendRow(['Marca temporal', 'nombre', 'apellido', 'email', 'celular', 'tipodoc', 'dni', 'horario', 'genero', 'oferta']);
+  }
+  
+  var formData = e.parameter;
+  
+  // Se crea la fila de datos respetando el orden de columnas de tu Google Sheet
+  var rowData = [
+    new Date(),           // Marca temporal
+    formData.nombre,      // nombre
+    formData.apellido,    // apellido
+    formData.email,       // email
+    formData.celular,     // celular
+    formData.tipoDNI,     // tipodoc (viene de name="tipoDNI" en el HTML)
+    formData.dni,         // dni
+    formData.horario,     // horario
+    formData.genero,      // genero
+    formData.oferta       // oferta
+  ];
+  
+  // Se añade la fila a la hoja
+  sheet.appendRow(rowData);
+  
+  // Se devuelve una respuesta JSON al frontend para confirmar que todo salió bien
+  var result = {
+    status: 'success',
+    message: 'Datos guardados correctamente.'
+  };
+  
+  return ContentService.createTextOutput(JSON.stringify(result))
+    .setMimeType(ContentService.MimeType.JSON);
+}

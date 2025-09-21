@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarín 365 | Obtené descuentos exclusivos</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="top-bar">
+    <img src="estrella.png" alt="Estrella" class="top-star">
+</div>
+    <main class="container">
+        <img src="clarin-80.png" alt="Logo Clarín 80" class="logo-clarin-80">
+        <h1>Suscribite y leé Clarín sin límites</h1>
+
+        <section class="formulario">
+            <div class="llamada-a-la-accion">
+                <p>¿Te llamamos?</p>
+                <p class="subtitulo">Dejanos tus datos y te contactaremos para ayudarte con la suscripción.</p>
+                <img src="asesorauric.png" alt="Icono de auricular" class="icono-llamada">
+            </div>
+            <form id="leadForm">
+                <div class="formulario-campos">
+                    <div class="columna-izquierda">
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="apellido">Apellido*</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="celular">Celular de contacto*</label>
+                            <input type="tel" id="celular" name="celular" placeholder="Ej: 1150400000" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="doc-number">Número de documento*</label>
+                            <div class="campo-dni">
+                                <select name="tipodoc" id="tipo-doc" required>
+                                    <option value="DNI">DNI</option>
+                                    <option value="LC">LC</option>
+                                    <option value="LE">LE</option>
+                                </select>
+                                <input type="tel" id="dni" name="dni" placeholder="Número de Documento" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna-derecha">
+                        <div class="campo-formulario">
+                            <label for="horario">¿A qué hora preferís que te llamemos?*</label>
+                            <select name="horario" id="horario" required>
+                                <option value="">Elegir horario...</option>
+                                <option value="mañana">Mañana</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noche">Noche</option>
+                            </select>
+                        </div>
+        
+                        <div class="campo-formulario">
+                            <label for="genero">Género*</label>
+                            <select name="genero" id="genero" required>
+                                <option value="">Seleccionar género</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <p class="pregunta-oferta">¿Qué oferta te interesa?*</p>
+                            <div class="ofertas-radio">
+                                <label>
+                                    <input type="radio" name="oferta" value="digital365">
+                                    <div class="oferta-texto">
+                                        <span>Digital 365 mensual</span>
+                                        <span>$1.090</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="oferta" value="digital">
+                                    <div class="oferta-texto">
+                                        <span>Digital mensual</span>
+                                        <span>$930</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="oferta" value="digital365plus">
+                                    <div class="oferta-texto">
+                                        <span>Digital 365 Plus mensual</span>
+                                        <span>$1.230</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="padding-bottom"></div>
+                    </div>
+                </div>
+                
+                <p class="obligatorios">*Campos obligatorios</p>
+                <button type="submit" class="cta-button">Quiero que me llamen</button>
+            </form>
+        </section>
+
+       <section class="ofertas">
+    <div class="oferta-card">
+        <img src="digital-365.png" alt="Tarjeta Digital 365" class="oferta-imagen">
+        <div class="oferta-contenido-texto">
+            <h3>Digital 365</h3>
+            <p class="precio">$1.090<span>/mes</span></p>
+            <p class="detalle-oferta">DURANTE 6 MESES<br>Luego $13.995 /mes</p>
+            <a href="#" class="suscribite-button">Suscribite</a>
+
+            <div class="acordeon">
+                <button class="acordeon-btn">
+                    Ver detalle
+                    <span class="acordeon-flecha">▼</span>
+                </button>
+                <div class="acordeon-contenido">
+                    <p>Incluye:</p>
+                    <ul>
+                        <li>✓ Acceso sin límites a Clarin.com y a la APP</li>
+                        <li>✓ Newsletters premium de periodistas destacados</li>
+                        <li>✓ Juegos Clarín ilimitado</li>
+                        <li>✓ Sorteos y beneficios exclusivos</li>
+                        <li>✓ Credencial 365 con beneficios en más de 5.000 comercios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="365-logo-redes.png" alt="Logo 365" class="oferta-logo-365">
+    </div>
+
+    <div class="oferta-card">
+        <img src="digital-365.png" alt="Tarjeta Digital" class="oferta-imagen">
+        <div class="oferta-contenido-texto">
+            <h3>Digital</h3>
+            <p class="precio">$930<span>/mes</span></p>
+            <p class="detalle-oferta">DURANTE 6 MESES<br>Luego $11.730 /mes</p>
+            <a href="#" class="suscribite-button">Suscribite</a>
+
+            <div class="acordeon">
+                <button class="acordeon-btn">
+                    Ver detalle
+                    <span class="acordeon-flecha">▼</span>
+                </button>
+                <div class="acordeon-contenido">
+                    <p>Incluye:</p>
+                    <ul>
+                        <li>✓ Acceso sin límites a Clarin.com y a la APP</li>
+                        <li>✓ Newsletters premium de periodistas destacados</li>
+                        <li>✓ Juegos Clarín ilimitado</li>
+                        <li>✓ Sorteos y beneficios exclusivos</li>
+                        <li>✓ Credencial 365 con beneficios en más de 5.000 comercios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="oferta-logo-365">
+            <img src="clarindigital.png" alt="Logo Clarín Digital" class="oferta-logo-365-img">
+        </div>
+    </div>
+
+    <div class="oferta-card">
+        <img src="digital-365-plus.png" alt="Tarjeta Digital 365 Plus" class="oferta-imagen">
+        <div class="oferta-contenido-texto">
+            <h3>Digital 365 Plus</h3>
+            <p class="precio">$1.230<span>/mes</span></p>
+            <p class="detalle-oferta">DURANTE 6 MESES<br>Luego $15.720 /mes</p>
+            <a href="#" class="suscribite-button">Suscribite</a>
+
+            <div class="acordeon">
+                <button class="acordeon-btn">
+                    Ver detalle
+                    <span class="acordeon-flecha">▼</span>
+                </button>
+                <div class="acordeon-contenido">
+                    <p>Incluye:</p>
+                    <ul>
+                        <li>✓ Acceso sin límites a Clarin.com y a la APP</li>
+                        <li>✓ Newsletters premium de periodistas destacados</li>
+                        <li>✓ Juegos Clarín ilimitado</li>
+                        <li>✓ Sorteos y beneficios exclusivos</li>
+                        <li>✓ Credencial 365 con beneficios en más de 5.000 comercios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="365-logo-redes.png" alt="Logo 365" class="oferta-logo-365">
+    </div>
+</section>
+
+
+        <section class="beneficios-seccion">
+            <img src="beneficios.png" alt="Beneficios de suscribirse" class="imagen-beneficios">
+        </section>
+<section class="tarjetas-seccion">
+        <img src="tarjetas_365.png" alt="Tarjetas 365" class="imagen-tarjetas">
+    </section>
+
+
+    </main>
+    
+   <a href="https://wa.me/numerodetelefono?text=Hola,%20me%20interesa%20obtener%20la%20tarjeta%20Clarín%20365." target="_blank" class="whatsapp-flotante-imagen">
+    <img src="whatsapp.png" alt="Icono de WhatsApp">
+</a>
+    <script src="script.js"></script>
+
+<footer class="footer">
+    <div class="footer-logo-container">
+        <img src="logoclarin.png" alt="Logo Clarín" class="footer-logo">
+    </div>
+    <div class="footer-links">
+        <a href="#" id="legales-link">Legales de productos</a>
+        <a href="#" id="terminos-link">Términos y condiciones de los sitios</a>
+        <a href="#" id="politica-link">Política de protección de datos personales</a>
+        <a href="#" id="normas-link">Normas de confidencialidad / privacidad</a>
+    </div>
+</footer>
+
+<div id="legales-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-text">
+            <h3>Legales de productos</h3>
+            <p>Legales de productos
+DIGITAL 365
+
+Oferta válida para nuevas altas desde el 11/03/2024 hasta el 31/12/2025 inclusive. Combo "SUSCRIPCIÓN DIGITAL 365", precio de lista $13.995 ARS. Precio inicial promocional por suscripción mensual $1.090 ARS durante 6 meses. A partir del segundo mes de suscripción, quienes contraten "Suscripción Digital 365", se les cobrará un abono suscriptor 365 mensual adicional de $4.513 ARS. Válido en la República Argentina. Período mínimo de suscripción: 1 mes. Para más información consultar términos y condiciones en www.clarin.com. ARTE GRÁFICO EDITORIAL ARGENTINO. CUIT 30-50012415-2 PIEDRAS 1743, CABA.
+
+
+
+DIGITAL
+
+Oferta válida para nuevas altas desde el 11/03/2024 hasta el 31/12/2025 inclusive. Combo "SUSCRIPCIÓN DIGITAL", precio de lista $11.730 ARS. Precio inicial promocional por suscripción mensual $930 ARS durante 6 meses. Válido en la República Argentina. Período mínimo de suscripción: 1 mes. Para más información consultar términos y condiciones en www.clarin.com. ARTE GRÁFICO EDITORIAL ARGENTINO. CUIT 30-50012415-2 PIEDRAS 1743, CABA.
+
+
+
+DIGITAL 365 PLUS
+
+Oferta válida para nuevas altas desde el 11/03/2024 hasta el 31/12/2025 inclusive. Combo "SUSCRIPCIÓN DIGITAL 365 PLUS", precio de lista $15.720 ARS. Precio inicial promocional por suscripción mensual $1.230 ARS durante 6 meses. A partir del segundo mes de suscripción, quienes contraten "Suscripción Digital 365 Plus", se les cobrará un abono suscriptor 365 mensual adicional de $4.513 ARS. Válido en la República Argentina. Período mínimo de suscripción: 1 mes. Para más información consultar términos y condiciones en www.clarin.com. ARTE GRÁFICO EDITORIAL ARGENTINO. CUIT 30-50012415-2 PIEDRAS 1743, CABA..</p>
+        </div>
+    </div>
+</div>
+
+<div id="terminos-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-text">
+            <h3>Términos y condiciones de los sitios</h3>
+            <p>Términos y condiciones de los sitios
+A través de los sitios del diario Clarín (www.clarin.com) y su programa de beneficios 365 (www.365.clarin.com), diario Olé (www.ole.com.ar), sus subdominios y/o secciones (en adelante denominados conjuntamente, “los Sitios”), toda persona (los "Usuarios") podrá acceder al contenido editorial y/o noticias periodísticas allí publicadas.Los presentes términos y condiciones son generales para los Sitios, sin perjuicio de los términos y condiciones que pueda haber en cada uno de estos en forma particular.Toda persona que utilice los Sitios (en adelante, "Usuario”), acepta sin condicionamientos todos y cada uno de los presentes Términos y Condiciones de Uso ("Términos de Uso") y la Política de Protección de datos personales del mismo (la "Política de Protección de datos personales").
+
+
+
+Los Sitios se reservan el derecho, a su sola discreción, de modificar, alterar o de otra manera actualizar, estos Términos de Uso y/o la Política de Protección de Datos Personales en cualquier momento. Las modificaciones entrarán en vigencia desde el momento que se indique; en su defecto, se entenderá que su aplicación es inmediata.En ningún caso se generarán cargos y/o costos adicionales a nombre del Usuario, salvo autorización expresa de su parte. Asimismo, en el supuesto de existir modificaciones en los precios de las suscripciones digitales, cargos y/o costos adicionales, los mismos serán publicados en la factura con la debida antelación.Se deja aclarado que ciertos contenidos accedidos a través de los Sitios (en adelante, los productos digitales) pueden estar alcanzados por normas específicas que reglamenten y complementen a los presentes Términos y Condiciones de Uso, razón por la cual se recomienda a los Usuarios tomar conocimiento específico de ellas.
+
+
+
+REGISTRACION DE USUARIO:
+
+El Usuario tendrá acceso a una cantidad limitada de notas periodísticas por mes calendario sin obligatoriedad de registrase en los Sitios, que podrá variar de mes a mes y cuya cantidad disponible para el Usuario dependerá del contenido que habitualmente consume el usuario en los sitios. A todo evento, para acceder a determinadas notas a una cantidad ilimitada de las mismas el Usuario estará obligado a registrarse para continuar accediendo a los Sitios.
+
+Sin perjuicio de lo anterior, en el caso del Sitio del diario Olé el Usuario tendrá acceso a diez (10) notas periodísticas por mes, debiendo registrarse una vez excedida dicha cantidad. No obstante, en este último caso, AGEA se reserva el derecho a cobrar a los Usuarios cargo y/o costo que a su criterio determine, en concepto de servicios y/o acceso a contenido editorial, conforme a su libre criterio y decisión.
+
+Se entiende por nota periodística toda aquella que contenga un desarrollo editorial y/o la narración de un suceso, quedando excluido de tal concepto el siguiente contenido: portada y subportadas de los Sitios, estadísticas, clima, horóscopo, fotos, videos y comentarios (en adelante, notas o las notas).
+
+Una vez superada dicha cantidad máxima de notas, el Usuario deberá registrarse en la página web que esté consultando o bien, mediante las siguientes redes sociales: Facebook y/o Gmail (Google), para poder acceder a la lectura de más notas. Para ello, se le solicitará al Usuario que cree una cuenta con su correo electrónico y contraseña (en adelante, la Cuenta), para lo cual, el Usuario deberá proveer cierta información precisa y actualizada. Los datos requeridos a tales efectos son: Nombre; Apellido; Sexo; Fecha de Nacimiento y e-mail. En todas las plataformas se accederá con el mismo nombre de Usuario y contraseña.Se deja expresamente aclarado que las notas a las que el Usuario acceda a través de las distintas plataformas, ya sea app mobile, web mobile en Smartphones y Tablets, no son acumulativas con aquellas a las que acceda a través de los Sitios. Asimismo, el conteo de las notas se reiniciará mensualmente. Las notas no se acumulan mes a mes. De esta manera, el Usuario comenzará el mes calendario con una cantidad de 0 (cero) notas leídas en su haber.
+
+
+
+CUENTA:
+
+El Usuario tendrá una Cuenta y la misma corresponderá a un único Usuario y éste no podrá compartir los detalles de la misma con nadie, caso contrario, AGEA se reserva el derecho de cancelar y/o suspender su acceso a los Sitios. El Usuario será responsable de mantener la confidencialidad de su contraseña, la cual no deberá revelar a ningún representante y/o agente de AGEA.
+
+El Usuario no podrá quedando terminantemente prohibido: (i) Seleccionar o utilizar los datos de ingreso de otra persona con la intención de hacerse pasar por ella; (ii) Usar los datos de ingreso sobre los cuales otra persona tiene derechos, sin la autorización de la misma; o (iii) Usar datos de ingreso que se consideraran ofensivos. El incumplimiento de las condiciones precedentes constituirá una violación de estas condiciones de servicio, lo cual puede resultar en la suspensión y/o cancelación inmediata de la Cuenta.El Usuario deberá notificar a AGEA de cualquier uso y/o sospecha de uso desautorizado de su Cuenta, o violación de seguridad, incluyendo pérdida, robo o difusión desautorizada de su contraseña o información vinculada a su tarjeta de crédito. El Usuario es responsable por el uso y/o actividad en su Cuenta, incluyendo el uso de la Cuenta por parte de cualquier tercero autorizado por el Usuario para utilizar sus datos de ingreso. Cualquier actividad fraudulenta, abusiva o de algún modo ilegal, será motivo de cancelación de la Cuenta, según criterio unilateral de AGEA.
+
+
+
+COMENTARIOS:
+
+Únicamente los suscriptores podrán realizar comentarios en las notas de los Sitios y estos serán responsables por las consecuencias que tales comentarios pudieran generar para terceros. AGEA de ninguna manera será responsable por los mismos y los daños que estos pudieran causar. Se deja expresa constancia que AGEA podrá proceder a eliminar aquellos comentarios que inciten a la violencia, que utilicen términos agresivos y/o que pueden considerarse que difamen a terceros.
+
+
+
+FORMA DE SUSCRIPCION:
+
+Toda persona física y/o jurídica, mayor de 18 años, nacional o extranjero, con capacidad suficiente para contratar, y que posea una tarjeta de crédito Visa, American Express, Mastercard, Tarjeta Naranja, CMR Falabella y Cabal, podrá suscribirse a cualquiera de los productos digitales.
+
+El Usuario podrá solicitar dicha suscripción de la siguiente manera ingresando en: www.clarin.com/suscripciones/landing.html, https://suscripcion.365.clarin/suscripcion/planes/clarin/clarindigital, www.kiosco.clarin.com y/o en la aplicación de Clarín disponible a tales efectos en Smartphones con Android e IOS.- completando la solicitud de suscripción allí contenida (en adelante, la “Solicitud”), de manera fehaciente y exacta, y cumplir con las demás condiciones estipuladas por AGEA.AGEA se reserva la facultad de modificar los datos a ser solicitados a los suscriptores titulares, en cualquier oportunidad.
+
+
+
+CONDICIONES DE CONTRATACION DE SUSCRIPCION:
+
+AGEA se expedirá aceptando o rechazando la solicitud de suscripción en el mismo momento en que la misma sea presentada por el Usuario. AGEA podrá rechazar la solicitud, sin necesidad de invocar fundamento alguno. El rechazo de la solicitud de suscripción por parte de AGEA, no dará derecho a reclamo alguno, bajo ningún concepto.La suscripción a los productos digitales será por un plazo mínimo de 1 (un) mes contada desde la fecha en que AGEA ha aceptado la solicitud. Se deja expresamente aclarado que la suscripción se renovará automáticamente por períodos iguales y sucesivos, salvo que AGEA y/o el Usuario manifiesten lo contrario con 30 (treinta) días de anticipación a la fecha de término de la suscripción contratada. Se deja expresamente aclarado que el Usuario podrá efectuar la cancelación de su suscripción, comunicándose al centro de atención al cliente de AGEA al 0810.333.0365.
+
+
+
+TIPOS DE SUSCRIPCION:
+
+El Usuario podrá optar por contratar cualquiera de las siguientes suscripciones:
+
+SUSCRIPCIÓN DIGITAL CLARIN: Con derecho a un acceso ilimitado de notas en clarín.com (web y web mobile), en la app nativa (Android/iOS) de Clarín (En adelante, COMBO N° 1).
+SUSCRIPCIÓN FULL DIGITAL 365: Con derecho a un acceso ilimitado de notas en clarín.com (web y web mobile), en la app nativa (Android/iOS) de Clarín. Incluye además una Tarjeta de beneficios 365 clásica para el Usuario (Ver bases y condiciones en www.365.com.ar). (En adelante, COMBO N°2).
+
+
+RECIO DE LA SUSCRIPCION Y FACTURACION:
+
+El precio de la suscripción a los productos digitales que el Usuario contrate, se definirá conforme a los valores vigentes al momento de completar la solicitud. Adicionalmente al precio de la suscripción, AGEA estará facultada a cobrar un costo final mensual, en la contratación de la suscripción del COMBO N°2, cuyo valor será determinado a criterio de AGEA, y que se verá reflejado a partir del segundo mes de contratación. Sin perjuicio de ello, AGEA se reserva el derecho a su sola discreción y en cualquier momento, de estipular, modificar, alterar y/o de otra manera, actualizar el precio de la suscripción y/o el costo final mensual por suscripción y a modificar los términos y condiciones siempre que lo encuentre conveniente. Las modificaciones entrarán en vigencia desde el momento que se indique, y en su defecto, se entenderá que su aplicación es inmediata. Se deja expresamente aclarado que el Usuario, no tendrán derecho a efectuar reclamo alguno con relación a ello, pudiendo dar de la suscripción a partir del mes en que entre en vigencia la modificación estipulada. Asimismo, el Usuario deberá hacerse cargo de todos los impuestos aplicables, vinculados al uso de los productos digitales.
+
+Para ver los detalles de las facturas, incluyendo métodos de pago y ciclos de facturación, el Usuario deberá visitar https://autogestion.365.com.ar. Allí podrá visualizar el historial de pagos y sus facturas pendientes, estando a cargo del Usuario la revisión periódica de dicha información. El Usuario deberá ingresar con su correo electrónico y la clave de identificación con la que se registró en cualquiera de Los Sitios. La factura se considera aceptada si no es impugnada dentro de los 7 (siete) días corridos desde su puesta a disposición.
+
+Se deja expresamente aclarado que cualquier cambio en la tarjeta de crédito con la cual deberá hacerse el pago, deberá ser informado por el Usuario a AGEA, comunicándose al centro de atención al cliente de AGEA al 0810.333.0365. La nueva tarjeta de crédito será dada de alta en la base de datos de AGEA, a los 7 (siete) días hábiles administrativo, contados desde el día que el Usuario solicitó e informó dicha modificación.
+
+
+
+MEDIOS DE PAGO DE LA SUSCRIPCION:
+
+Se deja expresamente aclarado que la suscripción de los productos digitales deberá ser abonada con la tarjeta de crédito que el mismo Usuario haya denunciado a tales efectos en la solicitud, por medio de débito automático.
+
+En la primera factura emitida, se adicionará un importe final al solo efecto de proceder a la validación de la tarjeta denunciada por el Usuario. Dicho importe será reintegrado en el resumen de cuenta más próximo. Cada una de las facturas se considera aceptada si no son impugnadas dentro de los 7 (siete) días corridos desde su puesta a disposición.Si la tarjeta de crédito del Usuario vence y/o resulta sin límite disponible y/o por cualquier motivo AGEA no puede realizar el débito correspondiente a la suscripción, el producto digital del cual se trate, será automáticamente suspendido.
+
+
+
+RESTRICCIONES DE USO:
+
+Se permite únicamente un uso personal e intransferible de las claves de acceso a los Sitios. Todos los contenidos de los Sitios pertenecen a AGEA o, en su caso, a terceras personas y están protegidos por la legislación sobre propiedad intelectual. Ningún contenido de los Sitios, cualquiera que sea su naturaleza, podrá ser bajado, publicado, emitido, retransmitido directa o indirectamente en ningún medio o soporte para uso distinto del estrictamente personal. Por tanto, queda terminantemente prohibida su utilización con fines comerciales, su distribución, así como su modificación, alteración o descompilación.
+
+Al acceder a los Sitios el Usuario acepta no vender, no publicar, no distribuir, no retransmitir ni facilitar ningún acceso a los contenidos de los Sitios a terceros. El Usuario acepta no utilizar los Sitios para ningún propósito ilegal.
+
+AGEA se reserva el derecho de restringir o cancelar el acceso a los Sitios si, a su criterio y consideración, el Usuario utiliza los Sitios para infringir alguna ley, violar derechos de terceros o incumplir las presentes condiciones de contratación. En caso de producirse descargas masivas de contenidos por parte de un Usuario, AGEA se reserva el derecho de cancelar el acceso a los Sitios de dicho Usuario, anular su suscripción, y/o adoptar las acciones legales que estime oportunas.
+
+Asimismo, AGEA no se responsabiliza por los nombres de Usuarios que afectan a personas ajenas, están protegidos por marcas registradas u otras leyes o que resultaren vulgares u ofensivos. Los Usuarios aceptan y reconocen que AGEA no controla, ni supervisa, ni asume responsabilidad alguna por la calidad, seguridad, características y demás elementos de los productos y/o servicios promocionados u ofrecidos en los Sitios.
+
+Asimismo, aceptan y reconocen que AGEA no controla, ni supervisa, ni asume responsabilidad acerca de la veracidad y exactitud de la descripción efectuada por aquellos que promocionan u ofrecen sus productos o servicios (en adelante los "Oferentes"), ni acerca del cumplimiento de los requisitos legales para ofrecer y vender los productos o servicios, ni sobre la capacidad y legitimación de los Oferentes para promocionar, ofrecer y/o vender sus bienes o servicios. El material publicitario es propiedad de los solicitantes del espacio. AGEA no es responsable del contenido y al respecto rigen las mismas exclusiones que para el material editorial.
+
+
+
+RESPONSABILIDAD DEL USUARIO:
+
+El Usuario es responsable de todos los datos y manifestaciones que incluya en los formularios y comentarios que envíe a AGEA en los Sitios, así como del contenido de cualquier otra comunicación que emita a éste (Para más información acceder a TÉRMINOS Y CONDICIONES DEL USO DE LOS ESPACIOS DE PARTICIPACIÓN DE LOS SITIOS DE TITULARIDAD DE ARTE GRÁFICO EDITORIAL ARGENTINO S.A.).
+
+El Usuario se compromete a utilizar los Sitios y todo su contenido de conformidad con la ley, la moral, el orden público, los presentes Términos de Uso que, en su caso, le sean de aplicación. Asimismo, se compromete hacer un uso adecuado de los contenidos de los Sitios y a no emplearlos para realizar actividades ilícitas o constitutivas de delito, que atenten contra los derechos de terceros y/o que infrinjan la regulación sobre propiedad intelectual e industrial, o cualesquiera otras normas del ordenamiento jurídico aplicable.El Usuario es responsable por el buen uso de los Sitios, comprometiéndose expresamente a evitar cualquier tipo de acción que pueda dañar a sistemas, equipos o servicios accesibles directos o indirectamente a través de Internet, incluyendo la congestión intencional de enlaces o sistemas y de acuerdo a las presentes condiciones.Los Sitios no serán responsable frente al Usuario por daños y perjuicios que se produjeran al Usuario como consecuencia del accionar de otros Usuarios o terceros y los que resulten de la inobservancia -por parte de terceros u otros Usuarios- de las leyes o reglamentaciones o de otros hechos ilícitos o del mal uso que terceros o Usuarios hagan del Sitio.
+
+La utilización de los Sitios y de Internet en general implica la asunción de riesgos de potenciales daños al software y al hardware del Usuario. Por tal motivo, el equipo terminal desde el cual acceda a los Sitios, el Usuario estaría en condiciones de resultar atacado y dañado por la acción de hackers quienes podrían incluso acceder a la información contenida en el equipo terminal del Usuario, extraerla, sustraerla y/o dañarla. Los Usuarios renuncian a efectuar reclamos por estos motivos. El intercambio de información a través de Internet tiene el riesgo de que tal información pueda ser captada por un tercero. Los Sitios no se hacen responsables de las consecuencias que pudiera acarrear al Usuario tal hipótesis.
+
+El Usuario responderá de la veracidad de los datos facilitados, reservándose AGEA el derecho a excluir de los Sitios a todo Usuario que haya facilitado datos falsos, sin perjuicio de las demás acciones que procedan en derecho. Mediante el ingreso del formulario de contratación correspondiente, el Usuario acepta las condiciones de registro aquí expuestas y se compromete a respetar el uso y las prohibiciones establecidas en las mismas. Asimismo, al enviar el formulario de contratación, el Usuario se compromete al pago correspondiente al producto y servicio adquirido.
+
+El Usuario acepta que, si sus datos de pago no permiten la facturación y/o cobro por parte de AGEA, el servicio pedido no le sea otorgado o será suspendido si lo tuviera activo. El Usuario autoriza en forma gratuita a AGEA o a cualquier otro tercero a reutilizar y/o republicar en cualquier otro medio y/o en cualquier otra red social el Comentario volcado en cada una de las notas. Los Sitios no guardan obligación alguna de conservar información que haya hecho disponible a los Usuarios, ni que le haya sido enviada por éstos últimos.
+
+
+
+RESPONSABILIDAD DE AGEA:
+
+AGEA se compromete a poner a disposición del cliente en los Sitios la información necesaria relativa a los productos que ofrece y las condiciones de contratación. El Usuario acepta que el acceso a los Sitios y el contenido de los mismos es el existente en cada momento. AGEA no aceptará reclamación alguna por los contenidos, actualizaciones o conexiones a los Sitios.
+
+AGEA hará todo lo posible por asegurar de buena fe, con todos los medios a su alcance, el acceso al servicio contratado por el Usuario. No obstante lo anterior, AGEA no se responsabiliza de las fallas técnicas de conexión de red que puedan provocar daños en los equipos, impedir la conexión o limitar total o parcialmente el acceso del Usuario a los Sitios. AGEA no se responsabilizará de las averías que se produzcan por las empresas suministradoras de servicio y que puedan impedir el acceso a los Sitios y en ningún caso asegurará el reembolso del importe pagado en caso de reclamación.
+
+
+
+COMUNICACIONES Y PUBLICIDAD DE AGEA:
+
+EL Usuario deberá indicar en su formulario de suscripción y/o registración si desea recibir determinada información comercial por parte de AGEA y/o sus empresas asociadas. AGEA se reserva el derecho de enviarle al Usuario correspondencia electrónica con el propósito de informarle acerca de productos y servicios de AGEA SA e información de partes selectas.
+
+AGEA se reserva el derecho de difundir información relacionada con el perfil y la Cuenta del Usuario. El Usuario al suscribirse, presta su conformidad y autoriza a AGEA a enviarle y trasmitirle todo tipo de comunicaciones, avisos y mensajes que guarden relación con la suscripción y con los fines publicitarios, comerciales y promocionales a los domicilios, como así también a las direcciones de correo electrónico y teléfonos que se encuentren registrados en nuestra base de datos.
+
+
+
+PROPIEDAD INTELECTUAL:
+
+Todo el material en estos Sitios, incluyendo, pero sin limitación a, imágenes, ilustraciones, clips de audio, y clips de video, se encuentra protegido por derechos de autor, los cuales son propiedad de, y controlados por u otras partes que han licenciado su material a Arte Gráfico Editorial Argentino SA ("Derechos de Autor").
+
+
+
+PROTECCION DE DATOS PERSONALES:
+
+Sin perjuicio de lo establecido en la Política de protección de datos personales de los Sitios, al registrarse y/o navegar los Sitios, al registrarse en los Sitios, el Usuario deberá prestar su consentimiento libre, expreso e informado para que determinados Datos Personales sean eventualmente recogidos por AGEA y almacenados en su base de datos, encontrándose protegida electrónicamente, utilizando los mecanismos de seguridad informática de protección de la información más completos y eficaces para mantenerla en total confidencialidad, conforme a la Ley Nº 25.326 de Protección de Datos Personales, no obstante lo cual, el titular de los Datos Personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la ley 25.326. Asimismo, toda persona tiene derecho a que sean rectificados, actualizados y, cuando corresponda suprimidos o sometidos a confidencialidad los Datos Personales de los que sea titular, que estén incluidos en un banco de datos (artículo 16 de la ley 25.326); siendo la AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, el Órgano de Control de la Ley N° 25.326.
+
+
+
+LEY APLICABLE Y JURISDICCION:
+
+Los presentes Términos Y Condiciones se interpretarán y regirán conforme a la legislación argentina. AGEA y el Usuario se comprometen a intentar resolver de manera amistosa cualquier desacuerdo que pudiera surgir en el desarrollo del presente Contrato, previamente a acudir a la jurisdicción contemplada, siendo competentes para cualquier controversia que pudiere llegar a suscitarse, los Tribunales Nacionales en lo Comercial, con asiento en la Capital Federal, sin reservas.
+
+La utilización de los Sitios está expresamente prohibida en toda jurisdicción en donde no puedan ser aplicadas las condiciones establecidas en los presentes Términos de Uso. Las personas que utilicen los Sitios, por su sola utilización aceptarán de pleno derecho todas y cada una de las disposiciones previstas en los presentes Términos de Uso, sin reservas.
+
+
+
+NOTIFICACIONES:Toda notificación u otra comunicación que deba efectuarse bajo estos Términos y Condiciones de Uso, deberá realizarse por escrito: (i) a la cuenta mail por él ingresada o por carta documento dirigida al domicilio denunciado en su registración; (ii) a los Sitios: a Piedras 1743, Capital Federal, Ciudad Autónoma de Buenos Aires (1139). Estos Sitios son responsabilidad de Arte Gráfico Editorial Argentino SA (AGEA), CUIT: 30-50012415-2 ubicado en Piedras 1743, Capital Federal, Ciudad Autónoma de Buenos Aires, República Argentina..</p>
+        </div>
+    </div>
+</div>
+
+<div id="politica-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-text">
+            <h3>Política de protección de datos personales</h3>
+            <p>Política de protección de datos personales
+Política de protección de datos personales
+Al registrarse en alguno de los sitios de dominio de ARTE GRAFICO EDITORIAL ARGENTINO S.A. (en adelante, "AGEA"), EL USUARIO deberá brindar información personal, prestando su consentimiento para que la misma sea almacenada directamente en una BASE DE DATOS, encontrándose protegida electrónicamente, utilizando los mecanismos de seguridad informática de protección de la información más completos y eficaces para mantenerla en total confidencialidad, conforme a la Ley Nº 25.326 de Hábeas Data, no obstante lo cual, EL USUARIO puede solicitar la eliminación o modificación de los mismos en el órgano de control de la citada norma, Dirección Nacional de Protección de Datos Personales, dependiente del Ministerio de Justicia, Seguridad y Derechos Humanos Sarmiento 1118, 5to. Piso (CP1041aax); tel. 4383-8510/12/13/15; https://www.argentina.gob.ar/aaip/datospersonales - infodnpdpa@jus.gov.ar.
+
+AGEA se reserva el derecho a modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales así como a prácticas de la industria. En dichos supuestos, anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.
+
+Mediante el presente, toda persona que se registra en un sitio de Internet de dominio de AGEA (en adelante USUARIO) y vuelque información respecto de su nombre, domicilio, sexo, fecha de nacimiento, documento nacional de identidad, identificación tributaria, teléfono, dirección de correo electrónico y/o, presta su consentimiento para que dicha información sea almacenada directamente en una BASE DE DATOS de propiedad de AGEA.El Usuario garantiza que los Datos Personales facilitados a AGEA son veraces y se hace responsable de comunicar a ésta cualquier modificación en los mismos.
+
+Se deja expresamente aclarado que ciertos Servicios prestados por éste sitio u otros sitios vinculados pueden contener Condiciones Particulares con previsiones específicas en materia de protección de Datos Personales.
+
+Los Datos Personales serán incorporados a una base de datos que es de titularidad de AGEA (la "Base").
+
+EL USUARIO presta su consentimiento para que AGEA realice operaciones y procedimientos sistemáticos, electrónicos o no, que permitan la recolección, conservación, ordenación, almacenamiento, modificación, evaluación, bloqueo, cesión y en general, el procesamiento de sus DATOS PERSONALES (en adelante TRATAMIENTO DE DATOS PERSONALES).
+
+AGEA podrá contratar a terceros para el tratamiento de Datos Personales.La finalidad de la recogida y tratamiento de los Datos Personales es la que se detalla a continuación:
+
+Para habilitar su participación en promociones, premios o concursos en línea.
+Para el desarrollo de nuevos productos y servicios que satisfagan las necesidades del Usuario.
+Para contactarse, vía mail o telefónicamente, con el Usuario a fin de relevar opiniones sobre el servicio y para informar sobre productos y servicios de cualquiera de los sitios editoriales o productos de AGEA.
+
+
+AGEA ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente requeridos, y ha instalado todos los medios y medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados a AGEA. Ello no obstante, el Usuario debe ser consciente de que las medidas de seguridad en Internet no son inexpugnables. Por tal motivo, debe tener presente que siempre que divulguen voluntariamente información personal online, ésta puede ser recogida y utilizada por otros. Por lo tanto, si bien ponemos nuestro mayor esfuerzo por proteger su información personal, AGEA no será responsable por la difusión de los datos personales de nuestros visitantes efectuada por fuentes ajenas a ésta ni será responsable por los daños y perjuicios que la misma genere.
+
+El Usuario tiene reconocidos los derechos de acceso, cancelación, rectificación y oposición, así como tienen reconocido el derecho a ser informados de los permisos de acceso realizados contactándose con AGEA a través del correo electrónico datospersonales@agea.com.ar
+
+El Usuario podrá ejercer su derecho de retiro o bloqueo total o parcial de su nombre en nuestra base de datos, mediante solicitud formal enviada al mail datospersonales@agea.com.ar. Para su mejor comprensión, se transcriben: 1) Artículo 27, inc. 3ro. de la ley 25326: (Archivos, registros o bancos de datos con fines de publicidad).3. El titular podrá en cualquier momento solicitar el retiro o bloqueo de su nombre de los bancos de datos a los que se refiere el presente artículo; y 2) Artículo 27 - Anexo I - Decreto 1558/01: En toda comunicación con fines de publicidad que se realice por correo, teléfono, correo electrónico, Internet u otro medio a distancia a conocer, se deberá indicar, en forma expresa y destacada, la posibilidad del titular del dato de solicitar el retiro o bloqueo, total o parcial, de su nombre de la base de datos. A pedido del interesado, se deberá informar el nombre del responsable o usuario del banco de datos que proveyó la información.Las estructuras de la Base no requieren ni permite el ingreso de datos "sensibles" en los términos de los artículos 7° y concordantes de la Ley 25.326 de Protección de Datos Personales y su Reglamentación..</p>
+        </div>
+    </div>
+</div>
+
+<div id="normas-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-text">
+            <h3>Normas de confidencialidad / privacidad</h3>
+            <p>Normas de confidencialidad / privacidad
+Clarin.com se compromete a adoptar una política de confidencialidad, con el objeto de proteger la privacidad de la información personal obtenida a través de sus servicios online.Las Normas de Confidencialidad que a continuación se detallan pueden tener cambios futuros, con lo cual se aconseja revisarlas periódicamente.
+
+A continuación se desarrollarán los siguientes términos:
+
+Tipo de información que se obtiene.
+Finalidad que se le dará a la información.
+Qué son los Cookies.
+Confidencialidad de la Información.
+Modificación / actualización de la información.
+Protección de la información personal.
+Confidencialidad de los Menores.
+Contenidos.
+Material de Associated Press (AP).
+Información bursátil.
+Aceptación de los términos.
+
+
+Tipo de información que se obtiene.
+
+Está bajo las normas de confidencialidad / privacidad toda aquella información personal que el usuario ingresa voluntariamente a nuestra red durante la inscripción al servicio y en otras ocasiones como en los concursos, las compras, etc. ésta incluye, pero no es limitativo, nombre, apellido, dirección, número de teléfono, correo electrónico, sexo, edad, nivel educacional. El usuario puede modificar o actualizar esta información en cualquier momento.
+
+
+
+Finalidad que se le dará a la información.
+
+Los datos personales contenidos en la información confidencial, son utilizados para proveerle al usuario un servicio personalizado y acorde a sus necesidades, en su caso, ofreciendo publicidad selectiva o contenidos que puedan llegar a serle de interés, si es que el usuario indicó recibirlos.
+
+
+
+Qué son los Cookies.
+
+Los Cookies son pequeñas piezas de información transferidas por el sitio Web desde el disco duro de la computadora del usuario, que graban sus datos personales cuando se conecta al servicio de Clarin.com y se modifican al abandonar el servicio. Los cookies son anónimos.El acceso a la información por medio de los cookies, permite ofrecer al usuario un servicio personalizado, ya que almacenan no sólo sus datos personales sino también la frecuencia de utilización del servicio y las secciones de la red visitadas, reflejando así sus hábitos y preferencias.Aceptar los cookies es requisito para poder recibir y/o utilizar nuestro servicio.Las redes publicitarias que insertan avisos en nuestras páginas pueden también utilizar sus propios cookies.
+
+
+
+Confidencialidad de la Información.
+
+Clarin.com no compartirá la información confidencial con ninguno de los socios o co-propietarios excepto que tenga expresa autorización de quienes se suscribieron, o cuando ha sido requerido por orden judicial o legal, o para proteger los derechos de propiedad u otros derechos de Clarin.com.Clarin.com no vende ni alquila la información de los usuarios. Si los datos personales del usuario debieran ser compartidos con socios comerciales o patrocinantes, el usuario será notificado antes que éstos sean recogidos o transferidos. Si no desea que sus datos sean compartidos, puede decidir no utilizar un servicio determinado o no participar en algunas promociones o concursos.
+
+
+
+Modificación / actualización de la información personal.
+
+Los datos personales proporcionados por el usuario formarán parte de un archivo que contendrá su perfil. Accediendo al mismo, el usuario puede modificarlos / actualizarlos en cualquier momento.Clarin.com aconseja al usuario que actualice sus datos cada vez que éstos sufran alguna modificación, ya que esto permitirá brindarle un servicio más personalizado.
+
+
+
+Protección de la Información Personal.
+
+La información proporcionada por el usuario, está asegurada por una clave de acceso a la cual sólo el usuario podrá acceder y de la cual sólo él tiene conocimiento. Clarin.com no intentará por ningún medio obtener esa clave personal.Debido a que ninguna transmisión por Internet puede garantizar su íntegra seguridad, Clarin.com no puede garantizar que la información transmitida utilizando su servicio sea completamente segura, con lo cual el usuario asume este riesgo que declara conocer y aceptar.El usuario es el único responsable de mantener en secreto su clave y la información de su cuenta. Para disminuir los riesgos Clarin.com recomienda al usuario salir de su cuenta y cerrar la ventana de su navegador cuando finalice su actividad, más aún si comparte su computadora con alguien o utiliza una computadora en un lugar público como una biblioteca o un c afé Internet.
+
+
+
+Confidencialidad de los Menores.
+
+La salvaguarda de la información personal infantil es extremadamente importante. Clarin.com recauda el mínimo indispensable de esa información necesaria para brindar su servicios.Clarin.com no solicita información de identificación personal a los menores. Los menores siempre deben solicitar permiso a sus padres antes de enviar información personal a otro usuario online.
+
+
+
+Contenidos
+
+Clarin.com no será responsable por los contenidos y/o la información provista a través del portal de "Guía Clarin.com" y de "Guía de Hoteles Clarin.com". Clarin.com no será responsable por ningún tipo de reclamo vinculado a la autenticidad y/o veracidad de los datos consignados en los mismos ya que éstos son contratados por terceros para su exhibición en dichos portales.
+
+
+
+Material de Associated Press (AP).
+
+El Material de AP incluido en Clarin.com se encuentra protegido por Derechos de autor. Prohibida su publicación, radiodifusión, reedición para radiodifusión o publicación y su redistribución directa o indirecta por cualquier medio. Prohibido su almacenamiento total o parcial en computadoras, excepto para uso personal y sin fines comerciales. AP no asume responsabilidad alguna por toda demora, inexactitud, error u omisión en el mismo o en la transmisión o entrega de la totalidad o parte del mismo, ni por los daños emergentes de tales circunstancias.Información bursátil.Bolsar es un servicio de la Bolsa de Comercio de Buenos Aires. Prohibida su retransmisión total o parcial por cualquier medio.
+
+
+
+Aceptación de los términos.Esta declaración de Confidencialidad / privacidad está sujeta a los términos y condiciones de Clarin.com, con lo cual constituye un acuerdo legal entre el usuario y Clarin.com.Si el usuario utiliza los servicios de Clarin.com, significa que ha leído, entendido y acordado los términos antes expuestos. Si no está de acuerdo con ellos, el usuario no deberá proporcionar ninguna información personal, ni utilizar el servicio porque no está autorizado para hacerlo.Clarin.com podrá dar de baja o modificar los servicios gratuitos que brinda a sus usuarios bajo la denominación "Clarín Personal" , en cualquier momento, lo que le será preavisado con una antelación de siete (7) días al momento de la realización de la mencionada baja o modificación.
+
+
+
+Sitio Clarin.com es parte de Clarin Digital..</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

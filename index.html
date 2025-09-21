@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarín 365 | Obtené descuentos exclusivos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <img src="estrella.png" alt="Estrella" class="top-star">
+    </div>
+    <main class="container">
+        <img src="clarin-80.png" alt="Logo Clarín 80" class="logo-clarin-80">
+        <h1>Suscribite y leé Clarín sin límites</h1>
+
+        <section class="formulario" id="leadFormSection">
+            <div class="llamada-a-la-accion">
+                <p>¿Te llamamos?</p>
+                <p class="subtitulo">Dejanos tus datos y te contactaremos para ayudarte con la suscripción.</p>
+                <img src="asesorauric.png" alt="Icono de auricular" class="icono-llamada">
+            </div>
+            <form id="leadForm">
+                <div class="formulario-campos">
+                    <div class="columna-izquierda">
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="apellido">Apellido*</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="celular">Celular de contacto*</label>
+                            <input type="tel" id="celular" name="celular" placeholder="Ej: 1150400000" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="dni">Número de documento*</label>
+                            <div class="campo-dni">
+                                <select name="tipodoc" id="tipo-doc" required>
+                                    <option value="DNI">DNI</option>
+                                    <option value="LC">LC</option>
+                                    <option value="LE">LE</option>
+                                </select>
+                                <input type="tel" id="dni" name="dni" placeholder="Número de Documento" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna-derecha">
+                        <div class="campo-formulario">
+                            <label for="horario">¿A qué hora preferís que te llamemos?*</label>
+                            <select name="horario" id="horario" required>
+                                <option value="">Elegir horario...</option>
+                                <option value="mañana">Mañana</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noche">Noche</option>
+                            </select>
+                        </div>
+        
+                        <div class="campo-formulario">
+                            <label for="genero">Género*</label>
+                            <select name="genero" id="genero" required>
+                                <option value="">Seleccionar género</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <p class="pregunta-oferta">¿Qué oferta te interesa?*</p>
+                            <div class="ofertas-radio">
+                                <label>
+                                    <input type="radio" name="oferta" value="digital365" checked>
+                                    <div class="oferta-texto">
+                                        <span>Digital 365 mensual</span>
+                                        <span>$1.090</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="oferta" value="digital">
+                                    <div class="oferta-texto">
+                                        <span>Digital mensual</span>
+                                        <span>$930</span>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="radio" name="oferta" value="digital365plus">
+                                    <div class="oferta-texto">
+                                        <span>Digital 365 Plus mensual</span>
+                                        <span>$1.230</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="padding-bottom"></div>
+                    </div>
+                </div>
+                
+                <p class="obligatorios">*Campos obligatorios</p>
+                <button type="submit" class="cta-button">Quiero que me llamen</button>
+            </form>
+        </section>
+
+        <section class="ofertas">
+            <div class="oferta-card">
+                <img src="clarindigital.png" alt="Imagen de celular" class="oferta-imagen-superior">
+                <div class="oferta-header">
+                    <h3>Solo Clarín Digital</h3>
+                </div>
+                <div class="oferta-precio">
+                    <p class="precio">$930<span>/mes</span></p>
+                </div>
+                <button class="suscribite-button" data-plan="Solo Clarín Digital">Suscribite</button>
+                <div class="acordeon">
+                    <button class="acordeon-btn">
+                        Ver detalle <span class="acordeon-flecha">▼</span>
+                    </button>
+                    <div class="acordeon-contenido">
+                        <img src="digital.png" alt="Imagen de digital" class="acordeon-imagen">
+                        <ul>
+                            <li>Acceso ilimitado a Clarin.com.</li>
+                            <li>Lectura completa del diario en la app.</li>
+                            <li>Newsletters con las noticias más importantes.</li>
+                            <li>Contenido exclusivo en tu celular.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="oferta-card">
+                <img src="365-logo-redes.png" alt="Logo Clarín 365" class="oferta-imagen-365">
+                <div class="oferta-header">
+                    <h3>Clarín 365</h3>
+                </div>
+                <div class="oferta-precio">
+                    <p class="precio">$1.090<span>/mes</span></p>
+                </div>
+                <button class="suscribite-button" data-plan="Clarin 365">Suscribite</button>
+                <div class="acordeon">
+                    <button class="acordeon-btn">
+                        Ver detalle <span class="acordeon-flecha">▼</span>
+                    </button>
+                    <div class="acordeon-contenido">
+                        <img src="digital-365.png" alt="Imagen de digital 365" class="acordeon-imagen">
+                        <ul>
+                            <li>Incluye todos los beneficios de Clarín Digital.</li>
+                            <li>Tarjeta de beneficios Clarín 365.</li>
+                            <li>Descuentos en más de 6.000 comercios.</li>
+                            <li>Beneficios 2x1 en cines, teatros y más.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="oferta-card">
+                <img src="365-logo-redes.png" alt="Logo Clarín 365 Plus" class="oferta-imagen-365">
+                <div class="oferta-header">
+                    <h3>Clarín 365 Plus</h3>
+                </div>
+                <div class="oferta-precio">
+                    <p class="precio">$1.230<span>/mes</span></p>
+                </div>
+                <button class="suscribite-button" data-plan="Clarin 365 Plus">Suscribite</button>
+                <div class="acordeon">
+                    <button class="acordeon-btn">
+                        Ver detalle <span class="acordeon-flecha">▼</span>
+                    </button>
+                    <div class="acordeon-contenido">
+                        <img src="digital-365-plus.png" alt="Imagen de digital 365 plus" class="acordeon-imagen">
+                        <ul>
+                            <li>Incluye todos los beneficios de Clarín Digital y Clarín 365.</li>
+                            <li>Acceso ilimitado a revista Ñ, rural y todas las publicaciones de Clarín.</li>
+                            <li>Acceso a más de 12.000 comercios.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="beneficios-seccion">
+                       <img src="beneficios.png" alt="Beneficios Club Clarín 365" class="imagen-beneficios">
+        </section>
+        
+<div class="tarjetas-container">
+    <img src="tarjetas_365.png" alt="Tarjetas Clarin 365" class="imagen-beneficios-chica">
+</div>
+
+        <div class="whatsapp-flotante-imagen">
+            <a href="https://wa.me/5491136458514" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </main>
+
+<footer class="footer">
+    <div class="logo-footer">
+        <img src="logoclarin.png" alt="Logo Clarín" class="logo-footer-img">
+    </div>
+    <div class="footer-links">
+        <a href="#" id="legales-link">Legales</a>
+        <a href="#" id="terminos-link">Términos y Condiciones</a>
+        <a href="#" id="politica-link">Política de Privacidad</a>
+        <a href="#" id="normas-link">Normas de comunidad</a>
+    </div>
+    <p class="derechos">&copy; Todos los derechos reservados</p>
+</footer>
+
+
+    <div id="legales-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-text">
+                <h3>Legales</h3>
+                <p>Los servicios y contenidos de Clarin.com, están disponibles para todos los usuarios que naveguen por el sitio, a excepción de las siguientes secciones que están reservadas a los suscriptores:...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="terminos-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-text">
+                <h3>Términos y Condiciones</h3>
+                <p>Clarin.com es un producto de Clarin Digital, una sociedad anónima constituida de acuerdo con la legislación de la República Argentina. Los términos y condiciones de Clarin.com, están sujetos a las leyes de la República Argentina...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="politica-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-text">
+                <h3>Política de Privacidad</h3>
+                <p>Toda la información personal (Nombre, Apellido, Email, Celular, etc.) de los usuarios de Clarin.com, es tratada de acuerdo a las leyes de la República Argentina. Clarin.com no divulga la información personal de sus usuarios a terceros...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="normas-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-text">
+                <h3>Normas de comunidad</h3>
+                <p>Los usuarios de Clarin.com se comprometen a utilizar el servicio de manera responsable y respetuosa. Se prohíbe el uso del servicio para fines ilegales, amenazantes, difamatorios...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<!-- Mensaje flotante de confirmación -->
+    <div id="modal-message" class="modal-message">
+        <div class="modal-message-content">
+            <span id="modal-message-close" class="close-btn-message">&times;</span>
+            <p id="modal-message-text"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+﻿document.addEventListener("DOMContentLoaded", function() {
+    const acordeonBtns = document.querySelectorAll(".acordeon-btn");
+    const leadForm = document.getElementById('leadForm');
+    const celularInput = document.getElementById('celular');
+    const dniInput = document.getElementById('dni');
+
+    acordeonBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const contenido = btn.nextElementSibling;
+            const flecha = btn.querySelector(".acordeon-flecha");
+
+            if (contenido.classList.contains("activo")) {
+                contenido.classList.remove("activo");
+                flecha.textContent = "▼";
+            } else {
+                contenido.classList.add("activo");
+                flecha.textContent = "▲";
+            }
+        });
+    });
+
+    // Validaciones para campos numéricos
+    celularInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    dniInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    // Envío del formulario
+    leadForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío del formulario por defecto
+        
+        // **IMPORTANTE: Reemplaza esta URL con la tuya.**
+        // Esta es la URL que obtuviste al desplegar tu script de Google Apps Script.
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4GNF6vdgv71N0tHT3ouko71e4_I2KPw2rgdCecKHK5FFELFqlSCHFMhjc83xi13QrYA/exec';
+        
+        const formData = new FormData(leadForm);
+        const data = {};
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+
+        const submitBtn = document.getElementById('submitBtn');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new URLSearchParams(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                showModalMessage('¡Formulario enviado con éxito!', '#4CAF50');
+                leadForm.reset();
+            } else {
+                showModalMessage('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.', '#f44336');
+                console.error('Error:', data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showModalMessage('Hubo un error de conexión.', '#f44336');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        });
+    });
+
+    // Función para mostrar mensajes modales
+    function showModalMessage(message, color) {
+        const modal = document.getElementById('modal-message');
+        const messageText = document.getElementById('modal-message-text');
+        
+        messageText.textContent = message;
+        modal.style.backgroundColor = color;
+        modal.style.display = 'block';
+
+        const closeBtn = document.getElementById('modal-message-close');
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Configuración para los modales
+    const legalesLink = document.getElementById('legales-link');
+    const terminosLink = document.getElementById('terminos-link');
+    const politicaLink = document.getElementById('politica-link');
+    const normasLink = document.getElementById('normas-link');
+
+    const legalesModal = document.getElementById('legales-modal');
+    const terminosModal = document.getElementById('terminos-modal');
+    const politicaModal = document.getElementById('politica-modal');
+    const normasModal = document.getElementById('normas-modal');
+
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    legalesLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        legalesModal.style.display = "block";
+    });
+
+    terminosLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        terminosModal.style.display = "block";
+    });
+
+    politicaLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        politicaModal.style.display = "block";
+    });
+
+    normasLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        normasModal.style.display = "block";
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.modal').style.display = "none";
+        });
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == legalesModal || event.target == terminosModal || event.target == politicaModal || event.target == normasModal) {
+            event.target.style.display = "none";
+        }
+    });
+
+});
