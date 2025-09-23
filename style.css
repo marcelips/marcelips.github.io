@@ -552,7 +552,7 @@ footer {
 }
 
 .logo-footer-img {
-    max-width: 70px; /* Puedes ajustar este valor para cambiar el tamaño de la imagen */
+    max-width: 50px; /* Puedes ajustar este valor para cambiar el tamaño de la imagen */
     height: auto;
 }
 
@@ -566,4 +566,50 @@ footer {
     color: #ffffff; /* Las letras de los enlaces en el footer ahora son blancas */
     text-decoration: none;
     margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    /* Ajustes del Formulario */
+    .formulario-campos {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .columna-derecha {
+        margin-top: -20px;
+    }
+
+    /* Ajustes de las Tarjetas de Ofertas */
+    .ofertas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .oferta-card {
+        padding: 20px;
+    }
+
+    .oferta-imagen-superior,
+    .oferta-imagen-365 {
+        max-width: 100px;
+    }
+    
+    .suscribite-button {
+        padding: 15px;
+    }
+
+    /* Ajustes del Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-footer-img {
+        max-width: 40px;
+    }
 }
