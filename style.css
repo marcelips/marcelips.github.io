@@ -81,11 +81,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-.formulario label {
+/* AUMENTO DE TAMAÑO DE ETIQUETAS DE CAMPOS (NOMBRE, EMAIL, DNI, etc.) */
+.formulario .campo-formulario label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 18px;
+    /* --- CAMBIO DE TAMAÑO GARANTIZADO --- */
+    font-size: 18px; 
+    /* ------------------------------------ */
 }
 
 .formulario input,
